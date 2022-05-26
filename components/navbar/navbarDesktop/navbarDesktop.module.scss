@@ -1,0 +1,75 @@
+@use "styles/mixins" as *;
+
+.navbarDesktopWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbarDesktopLogoContainer {
+  position: relative;
+  width: 3rem;
+  height: 2rem;
+  align-self: flex-start;
+}
+
+.navbarDesktopMenuItemsContainer {
+  color: var(--white);
+  flex-grow: 1;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    li {
+      font-size: 18px;
+      text-decoration: none;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.02rem;
+        bottom: 0;
+        left: 0;
+        background-color: var(--white);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      &:hover {
+        color: var(--white);
+      }
+
+      &:hover::before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.navbarDesktopButton {
+  background-color: var(--gray1);
+  color: var(--black);
+  border-radius: 1rem;
+  padding: 0.2rem 0.1rem;
+  font-size: 18px;
+  width: 12%;
+  @include animation(fadeIn, 1s);
+
+  &:hover {
+    background-color: var(--black);
+    border: 0.01rem solid var(--gray1);
+    color: var(--white);
+    border-radius: 1rem;
+  }
+}

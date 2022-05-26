@@ -1,0 +1,50 @@
+@use "styles/mixins" as *;
+
+.aboutContainer {
+  height: 60vh;
+
+  @include smallMedia {
+    height: 90vh;
+    margin-top: 10rem;
+  }
+
+  @include mediumMedia {
+    height: 40vh;
+    margin-top: 8rem;
+  }
+}
+
+.aboutWrapper {
+  position: relative;
+  height: inherit;
+  background-color: transparent;
+}
+
+.aboutTitle {
+  position: absolute;
+  background-color: transparent;
+  top: 0rem;
+  left: 9rem;
+  z-index: 1;
+
+  @include mediumMedia {
+    left: 2.5rem;
+  }
+}
+
+.aboutDescription {
+  position: absolute;
+  background-color: transparent;
+  top: 6.5rem;
+  left: 9rem;
+  z-index: 1;
+
+  @include smallMedia {
+    top: 5rem;
+  }
+
+  @include mediumMedia {
+    top: 3rem;
+    left: 4.5rem;
+  }
+}

@@ -1,0 +1,60 @@
+@use "styles/mixins" as *;
+
+.serviceDescriptionContainer,
+.serviceDescriptionAccordionContainer {
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.serviceDescriptionAccordionContainer {
+  flex-direction: column;
+  width: 100%;
+  max-width: 26rem;
+}
+
+.serviceDescriptionAccordionHeading {
+  display: flex;
+}
+
+.serviceDescriptionTitle {
+  background-color: transparent;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.serviceDescriptionText {
+  background-color: transparent;
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  @include mediumMedia {
+    font-size: 18px;
+    line-height: 1.2rem;
+    @include animation(fadeIn, 1s);
+  }
+}
+
+.serviceIconRed {
+  background-color: transparent;
+  color: var(--red);
+}
+
+.serviceIconPurple {
+  background-color: transparent;
+  color: var(--purple);
+}
+
+.serviceIconYellow {
+  background-color: transparent;
+  color: var(--yellow);
+}
+
+.serviceIconWhite {
+  background-color: transparent;
+  color: var(--white);
+}

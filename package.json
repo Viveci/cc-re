@@ -1,0 +1,32 @@
+{
+  "name": "cruise-control",
+  "author": "Malcolm R. Kente (reMRKable Dev)",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@react-spring/parallax": "^9.3.1",
+    "aos": "^2.3.4",
+    "classnames": "^2.3.1",
+    "next": "12.0.0",
+    "react": "17.0.2",
+    "react-accessible-accordion": "^4.0.0",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.18.0",
+    "react-icons": "^4.3.1",
+    "react-spring": "^9.3.2",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "8.1.0",
+    "eslint-config-next": "12.0.0"
+  }
+}

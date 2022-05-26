@@ -1,0 +1,73 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin smallMedia {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin mediumMedia {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin underline($color, $margin) {
+  @include media {
+    &::after {
+      border-bottom: 1px solid $color;
+      content: "";
+      display: block;
+      height: 90%;
+      left: 0%;
+      margin: $margin 0 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) scaleX(0);
+      transition: transform 0.3s var(--easeOutQuad);
+      width: 100%;
+    }
+
+    &:hover {
+      &::after {
+        transform: translate(0, -50%) scaleX(1);
+      }
+    }
+  }
+}
+
+@mixin animation($name, $duration) {
+  animation-name: $name;
+  animation-duration: $duration;
+
+  @at-root {
+    @keyframes #{$name} {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@mixin glowAnimation($name, $duration) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+  @at-root {
+    @keyframes #{$name} {
+      from {
+        text-shadow: 0 0 10px #e74747, 0 0 10px #e74747, 0 0 10px #e60073,
+          0 0 10px #e74747, 0 0 10px #e74747, 0 0 10px #e74747, 0 0 10px #e74747;
+      }
+      to {
+        text-shadow: 0 0 10px #e74747, 0 0 10px #e74747, 0 0 10px #e74747,
+          0 0 10px #e74747, 0 0 10px #e74747, 0 0 10px #e74747, 0 0 10px #e74747;
+      }
+    }
+  }
+}

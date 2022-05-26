@@ -1,0 +1,193 @@
+@use "styles/mixins" as *;
+
+.studioImageContainer {
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 8rem;
+
+  @include smallMedia {
+    margin-bottom: 5rem;
+  }
+
+  @include mediumMedia {
+    top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.studioImageContainerMb {
+  margin-bottom: 26rem;
+
+  @include smallMedia {
+    margin-bottom: 17rem;
+  }
+
+  @include mediumMedia {
+    margin-bottom: 2rem;
+  }
+}
+
+.studioImageWrapper {
+  position: relative;
+  height: 20rem;
+  width: 25rem;
+  left: 12rem;
+  top: 7rem;
+
+  @include smallMedia {
+    height: 15rem;
+    width: 20rem;
+    top: 5rem;
+  }
+
+  @include mediumMedia {
+    height: 10rem;
+    width: 13rem;
+    left: 5rem;
+    top: 0;
+  }
+}
+
+.studioImage {
+  z-index: 0;
+  border-radius: 10%;
+}
+
+.studioName {
+  position: absolute;
+  background-color: transparent;
+  top: 22rem;
+  left: 15rem;
+  z-index: 1;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 10rem;
+
+  @include smallMedia {
+    top: 17rem;
+    font-size: 2.5rem;
+    width: 7rem;
+  }
+
+  @include mediumMedia {
+    top: 4rem;
+    left: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+.studioDescription {
+  position: absolute;
+  background-color: transparent;
+  color: var(--white);
+  top: 36rem;
+  left: 6.5rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+
+  @include smallMedia {
+    font-size: 1rem;
+    top: 25.5rem;
+    left: 8rem;
+    width: 20rem;
+  }
+
+  @include mediumMedia {
+    left: 22rem;
+    top: 4rem;
+    width: 14rem;
+  }
+
+  p,
+  span,
+  strong {
+    background-color: transparent;
+    font-size: 1rem;
+
+    @include smallMedia {
+      font-size: 0.7rem;
+    }
+
+    @include mediumMedia {
+      font-size: 0.4rem;
+    }
+  }
+
+  p {
+    line-height: 1.3rem;
+
+    @include smallMedia {
+      line-height: 1rem;
+    }
+
+    @include mediumMedia {
+      line-height: 0.6rem;
+    }
+  }
+}
+
+.studioTextRed {
+  color: var(--red);
+}
+
+.studioTextBlack {
+  color: var(--gray3);
+}
+
+.studioTextPurple {
+  color: var(--purple);
+}
+
+.studioTextYellow {
+  color: var(--yellow);
+}
+
+.studioTextGold {
+  color: var(--gold);
+}
+
+.studioPlacementLeft {
+  left: 5rem;
+}
+
+.studioPlacementRight {
+  @include mediumMedia {
+    left: 21.5rem;
+  }
+}
+
+.studioPlacementCenter {
+  left: 6.5rem;
+
+  @include smallMedia {
+    left: 8rem;
+  }
+
+  @include mediumMedia {
+    left: 8rem;
+  }
+}
+
+.studioTextPlacementCenter {
+  top: 27rem;
+  left: 6.5rem;
+
+  @include smallMedia {
+    top: 20rem;
+    left: 8rem;
+  }
+
+  @include mediumMedia {
+    top: 4rem;
+    left: 6rem;
+  }
+}
+
+.studioTextPlacementRight {
+  @include mediumMedia {
+    left: 19rem;
+  }
+}

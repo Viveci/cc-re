@@ -1,0 +1,10 @@
+@use "styles/mixins";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+
+  @include mixins.mediumMedia {
+    grid-template-columns: repeat(34, 1fr);
+  }
+}

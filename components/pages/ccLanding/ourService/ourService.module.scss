@@ -1,0 +1,89 @@
+@use "styles/mixins" as *;
+
+.serviceContainer {
+  height: 60vh;
+
+  @include smallMedia {
+    height: 90vh;
+  }
+
+  @include mediumMedia {
+    height: 70vh;
+    margin-top: 5rem;
+  }
+}
+
+.serviceWrapper {
+  position: relative;
+  height: inherit;
+  background-color: transparent;
+}
+
+.serviceTitle {
+  position: absolute;
+  background-color: transparent;
+  top: 0rem;
+  left: 9rem;
+  z-index: 1;
+
+  @include mediumMedia {
+    left: 13rem;
+  }
+}
+
+.serviceDescription {
+  position: absolute;
+  background-color: transparent;
+  top: 6.5rem;
+  left: 9rem;
+  z-index: 1;
+
+  @include smallMedia {
+    top: 5rem;
+  }
+
+  @include mediumMedia {
+    top: 3rem;
+    left: 15rem;
+  }
+}
+
+.serviceCTA {
+  background-color: var(--gray1);
+  color: var(--black);
+  border-radius: 3rem;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  position: absolute;
+  top: 27.7rem;
+  left: 0rem;
+  z-index: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  &:hover,
+  &:active {
+    background-color: var(--black);
+    border: 0.01rem solid var(--gray1);
+    color: var(--white);
+    border-radius: 3rem;
+  }
+
+  @include smallMedia {
+    top: 15rem;
+    left: 0rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  @include mediumMedia {
+    top: 5rem;
+    left: 0rem;
+    line-height: 1rem;
+    padding: 0.2rem 0.1rem;
+    font-size: 18px;
+    width: 50%;
+  }
+}

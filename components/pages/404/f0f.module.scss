@@ -1,0 +1,55 @@
+@use "styles/mixins" as *;
+
+.f0fContainer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--white);
+  gap: 2rem;
+
+  @include animation(fadeIn, 1s);
+}
+
+.f0fTitle {
+  font-size: 2.5rem;
+
+  @include mediumMedia {
+    font-size: 4rem;
+  }
+}
+
+.f0fMsg {
+  font-size: 1.8rem;
+
+  @include mediumMedia {
+    font-size: 1rem;
+  }
+}
+
+.f0fCTA {
+  background-color: var(--gray1);
+  color: var(--black);
+  border-radius: 3rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+  width: 45%;
+  text-align: center;
+  font-size: 1.5rem;
+
+  &:hover,
+  &:active {
+    background-color: var(--black);
+    border: 0.01rem solid var(--gray1);
+    color: var(--white);
+    border-radius: 3rem;
+  }
+
+  @include smallMedia {
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 30%;
+  }
+}

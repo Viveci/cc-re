@@ -1,0 +1,19 @@
+@use "styles/mixins" as *;
+
+.navbarContainer {
+  text-align: center;
+  height: 6rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 99;
+
+  @include smallMedia {
+    height: 5rem;
+  }
+
+  @include mediumMedia {
+    height: 3rem;
+  }
+}

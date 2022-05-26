@@ -1,0 +1,23 @@
+@use "styles/mixins" as *;
+
+.serviceDesktopContainer {
+  background-color: transparent;
+}
+
+.serviceDesktopWrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceDesktopDescriptionContainer {
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  margin-bottom: 3rem;
+}

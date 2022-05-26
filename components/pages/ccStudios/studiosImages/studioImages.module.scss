@@ -1,0 +1,11 @@
+@use "styles/mixins" as *;
+
+.studioImagesContainer {
+  background-color: transparent;
+}
+
+.studioImagesWrapper {
+  position: relative;
+  height: inherit;
+  background-color: transparent;
+}

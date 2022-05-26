@@ -1,0 +1,13 @@
+@use "styles/mixins" as *;
+
+.divider {
+  visibility: hidden;
+
+  @include mediumMedia {
+    visibility: visible;
+    border: 0.05rem solid var(--white);
+    border-radius: 1rem;
+    width: 90%;
+    background-color: var(--white);
+  }
+}

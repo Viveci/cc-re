@@ -1,0 +1,61 @@
+@use "styles/mixins" as *;
+
+.wosContainer {
+  position: relative;
+  background-color: transparent;
+  margin-top: 18rem;
+  margin-bottom: 8rem;
+  height: 5vh;
+
+  @include smallMedia {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+  }
+
+  @include mediumMedia {
+    height: 25vh;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.wosWrapper {
+  position: relative;
+  height: inherit;
+  background-color: transparent;
+}
+
+.wosTitle {
+  position: absolute;
+  background-color: transparent;
+  top: 0rem;
+  left: 9rem;
+  z-index: 1;
+  width: 15rem;
+
+  @include smallMedia {
+    width: 20rem;
+  }
+
+  @include mediumMedia {
+    width: max-content;
+    left: 2.5rem;
+  }
+}
+
+.wosDescription {
+  position: absolute;
+  background-color: transparent;
+  top: 6.5rem;
+  left: 9rem;
+  z-index: 1;
+
+  @include smallMedia {
+    top: 6rem;
+  }
+
+  @include mediumMedia {
+    top: 2.5rem;
+    left: 2.58rem;
+  }
+}

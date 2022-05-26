@@ -1,0 +1,40 @@
+@use "./mixins";
+@use "./colors";
+@use "./grid";
+
+html,
+* {
+  box-sizing: border-box;
+  background-color: var(--black);
+  // 1 rem = 10px with the following dimensions
+  font-size: calc(10 / 375 * 100vw);
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  &::before {
+    content: "";
+  }
+}
+
+a,
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  text-transform: inherit;
+}
+

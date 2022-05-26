@@ -1,0 +1,143 @@
+@use "styles/mixins" as *;
+
+.contactHeroContainer {
+  height: 60vh;
+
+  @include smallMedia {
+    height: 100vh;
+  }
+
+  @include mediumMedia {
+    height: 50vh;
+  }
+}
+
+.thankYouWrapper {
+  background-color: transparent;
+  height: 90vh;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankYouCloseIconContainer {
+  position: relative;
+  top: -15rem;
+  left: 2rem;
+  width: 100%;
+  color: var(--white);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+
+  @include smallMedia {
+    top: 1rem;
+  }
+
+  @include mediumMedia {
+    top: -2rem;
+    left: 2rem;
+  }
+}
+
+.thankYouWarningImageWrapper {
+  background-color: transparent;
+  height: 2rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+
+  @include smallMedia {
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  @include mediumMedia {
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.thankYouWarningImage {
+  background-color: transparent;
+}
+
+.thankYouLogoImageWrapper {
+  background-color: transparent;
+  height: 15rem;
+  width: 100%;
+
+  @include smallMedia {
+    height: 4rem;
+  }
+
+  @include mediumMedia {
+    height: 5rem;
+  }
+}
+
+.thankYouLogoImage {
+  background-color: transparent;
+}
+
+.thankYouText {
+  color: var(--red);
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 4rem;
+
+  @include smallMedia {
+    font-size: 1rem;
+  }
+
+  @include mediumMedia {
+    font-size: 18px;
+  }
+}
+
+.contactHeroWrapper {
+  position: relative;
+  height: inherit;
+  background-color: transparent;
+}
+
+.contactHeroImageWrapper {
+  position: relative;
+  background-color: transparent;
+  height: 30rem;
+  width: 100%;
+  top: 2rem;
+
+  @include mediumMedia {
+    top: -3rem;
+    height: 25rem;
+  }
+}
+
+.contactHeroImage {
+  z-index: 1;
+  background-color: transparent;
+}
+
+.contactHeroImageWrapper2 {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 50rem;
+  top: -45rem;
+
+  @include smallMedia {
+    top: -40rem;
+  }
+
+  @include mediumMedia {
+    top: -55rem;
+    height: 50rem;
+  }
+}
+
+.contactHeroImage2 {
+  z-index: 0;
+  background-color: transparent;
+}

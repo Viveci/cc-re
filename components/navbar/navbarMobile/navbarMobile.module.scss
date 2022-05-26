@@ -1,0 +1,26 @@
+@use "styles/mixins" as *;
+
+.navbarMobileWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.navbarMobileLogoContainer {
+  position: relative;
+  width: 10rem;
+  height: 5rem;
+  background-color: transparent;
+
+  @include smallMedia {
+    width: 8rem;
+    height: 3rem;
+  }
+}
+
+.navbarMobileIconContainer {
+  color: var(--white);
+  cursor: pointer;
+  background-color: transparent;
+}
