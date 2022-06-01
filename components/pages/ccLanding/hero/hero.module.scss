@@ -66,17 +66,17 @@
   z-index: 1;
   color: var(--white);
   font-size: 5rem;
-  font-weight: bold;
+  font-weight: 700;
 
   @include smallMedia {
     top: 2.5rem;
   }
 
   @include mediumMedia {
-    top: 1.5rem;
-    left: 2.5rem;
-    font-size: 110px;
-    width: 20rem;
+    top: 74px;
+    left: 107px;
+    font-size: 72px;
+    max-width: 330px;
   }
 }
 

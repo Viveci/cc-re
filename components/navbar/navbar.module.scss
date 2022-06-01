@@ -2,18 +2,23 @@
 
 .navbarContainer {
   text-align: center;
-  height: 6rem;
   position: sticky;
   top: 0;
   width: 100%;
   padding: 1rem 2rem;
   z-index: 99;
+  opacity: 0.83;
 
   @include smallMedia {
-    height: 5rem;
+    // height: 5rem;
+
+  }
+
+  @include tablet {
+    padding: 10px 55px;
   }
 
   @include mediumMedia {
-    height: 3rem;
+    padding: 10px 55px;
   }
 }

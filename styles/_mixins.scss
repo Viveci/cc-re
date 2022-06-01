@@ -4,6 +4,12 @@
     @content;
   }
 }
+// Tablets (768px and up)
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 912px) {
+    @content;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @mixin mediumMedia {
   @media (min-width: 768px) {

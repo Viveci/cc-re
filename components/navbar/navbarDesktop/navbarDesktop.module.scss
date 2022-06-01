@@ -22,12 +22,13 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
 
     li {
       font-size: 18px;
       text-decoration: none;
       position: relative;
+      margin-right: 90px;
 
       &:before {
         content: "";
