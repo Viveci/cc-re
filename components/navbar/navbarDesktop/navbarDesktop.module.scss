@@ -25,7 +25,7 @@
     justify-content: flex-end;
 
     li {
-      font-size: 18px;
+      font-size: 14px;
       text-decoration: none;
       position: relative;
       margin-right: 90px;
@@ -62,9 +62,10 @@
   background-color: var(--gray1);
   color: var(--black);
   border-radius: 1rem;
-  padding: 0.2rem 0.1rem;
-  font-size: 18px;
-  width: 12%;
+  padding: 0.2rem 0.8rem;
+  font-size: 16px;
+  max-width: 14%;
+  margin-left: 130px;
   @include animation(fadeIn, 1s);
 
   &:hover {

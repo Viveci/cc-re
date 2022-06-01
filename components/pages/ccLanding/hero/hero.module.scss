@@ -92,12 +92,14 @@
   @include smallMedia {
     top: 20rem;
     font-size: 1rem;
+
   }
 
   @include mediumMedia {
-    top: 12rem;
-    left: 2.8rem;
-    font-size: 18px;
+    top: 330px;
+    left: 110px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -130,10 +132,10 @@
   }
 
   @include mediumMedia {
-    top: 11.4rem;
-    left: 16rem;
+    top: 380px;
+    left: 102px;
     padding: 0.2rem 0.1rem;
-    font-size: 18px;
-    width: 12%;
+    font-size: 16px;
+    max-width: 14%;
   }
 }

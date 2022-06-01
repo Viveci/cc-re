@@ -19,7 +19,7 @@ const NavbarDesktop = () => {
       {isScroll && (
         <SiteLink
           linkTo="/contact"
-          value="Get in Touch"
+          value="Get in touch"
           className={styles.navbarDesktopButton}
         />
       )}
