@@ -29,6 +29,10 @@
       text-decoration: none;
       position: relative;
       margin-right: 90px;
+     
+      @include tablet {
+        margin: 0 auto;
+      }
 
       &:before {
         content: "";
@@ -68,7 +72,7 @@
   height: 40px;
   min-width: 131px;
   font-size: 16px;
-  // margin-left: 45%;
+  margin-left: 14%;
   @include animation(fadeIn, 1s);
 
   &:hover {
@@ -76,5 +80,9 @@
     border: 0.01rem solid var(--gray1);
     color: var(--white);
     border-radius: 1rem;
+  }
+
+  @include mediumMedia {
+    margin-left: unset;
   }
 }
