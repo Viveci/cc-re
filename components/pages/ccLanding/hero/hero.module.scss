@@ -62,14 +62,20 @@
   position: absolute;
   background-color: transparent;
   top: 5rem;
-  left: 9rem;
   z-index: 1;
   color: var(--white);
-  font-size: 5rem;
+  font-size: 72px;
   font-weight: 700;
+  line-height: 73px;
+  width: 276px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 
   @include smallMedia {
-    top: 2.5rem;
+    top: 74px;
+    left: 107px;
+    margin: unset;
   }
 
   @include mediumMedia {
@@ -77,26 +83,30 @@
     left: 107px;
     font-size: 72px;
     max-width: 330px;
+   
   }
 }
 
 .heroSubtitle {
   position: absolute;
   background-color: transparent;
-  top: 23rem;
-  left: 9.5rem;
+  top: 325px;
   z-index: 1;
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   @include smallMedia {
-    top: 20rem;
+    top: 335px;
+    left: 110px;
     font-size: 1rem;
-
+    width: unset;
   }
 
   @include mediumMedia {
-    top: 330px;
+    top: 335px;
     left: 110px;
     font-size: 16px;
     letter-spacing: 0.2px;
@@ -104,17 +114,21 @@
 }
 
 .heroCTA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   background-color: var(--gray1);
   color: var(--black);
-  border-radius: 3rem;
-  padding: 1.5rem 2.5rem;
-  width: 45%;
-  position: absolute;
-  top: 27.7rem;
-  left: 9rem;
+  border-radius: 22px;
+  height: 45px;
+  top: 380px;
+  width: 40%;
   z-index: 1;
-  text-align: center;
-  font-size: 1.5rem;
+  font-size: 16px;
+  left: 0; 
+  right: 0; 
+  margin: 0 auto;
 
   &:hover,
   &:active {
@@ -125,17 +139,12 @@
   }
 
   @include smallMedia {
-    top: 23.5rem;
-    font-size: 1rem;
-    padding: 0.8rem;
-    width: 30%;
+    width: 164px;
+    margin: unset;
   }
 
   @include mediumMedia {
-    top: 380px;
     left: 102px;
-    padding: 0.2rem 0.1rem;
-    font-size: 16px;
-    max-width: 14%;
+    width: 164px;
   }
 }
