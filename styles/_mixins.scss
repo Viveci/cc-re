@@ -16,6 +16,11 @@
     @content;
   }
 }
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
 
 @mixin underline($color, $margin) {
   @include media {

@@ -72,18 +72,17 @@
   left: 0;
   right: 0;
 
-  @include smallMedia {
-    top: 74px;
-    left: 107px;
-    margin: unset;
-  }
-
   @include mediumMedia {
     top: 74px;
     left: 107px;
-    font-size: 72px;
-    max-width: 330px;
-   
+    line-height: 72px;
+    width: 430px;
+    margin: unset;
+  }
+
+  @include desktop {
+    font-size: 92px;
+    line-height: 90px;
   }
 }
 
@@ -99,17 +98,15 @@
   justify-content: center;
 
   @include smallMedia {
-    top: 335px;
-    left: 110px;
-    font-size: 1rem;
-    width: unset;
-  }
-
-  @include mediumMedia {
-    top: 335px;
+    top: 345px;
     left: 110px;
     font-size: 16px;
+    width: unset;
     letter-spacing: 0.2px;
+  }
+
+  @include desktop {
+    top: 375px;
   }
 }
 
@@ -141,10 +138,12 @@
   @include smallMedia {
     width: 164px;
     margin: unset;
+    left: 102px;
+    top: 390px;
   }
 
-  @include mediumMedia {
-    left: 102px;
-    width: 164px;
+  @include desktop {
+    top: 420px;
   }
+
 }
