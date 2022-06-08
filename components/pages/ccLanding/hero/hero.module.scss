@@ -2,9 +2,11 @@
 
 .heroContainer {
   height: 60vh;
+  margin-top: 40px;
 
   @include smallMedia {
     height: 100vh;
+    margin-top: unset;
   }
 
   @include mediumMedia {
@@ -89,7 +91,7 @@
 .heroSubtitle {
   position: absolute;
   background-color: transparent;
-  top: 325px;
+  top: 355px;
   z-index: 1;
   color: var(--white);
   font-size: 18px;
@@ -119,7 +121,7 @@
   color: var(--black);
   border-radius: 22px;
   height: 45px;
-  top: 380px;
+  top: 420px;
   width: 40%;
   z-index: 1;
   font-size: 16px;

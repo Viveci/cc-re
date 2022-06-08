@@ -1,7 +1,7 @@
 @use "styles/mixins" as *;
 
 .bottomHeroContainer {
-  height: 60vh;
+  height: 100vh;
 
   @include smallMedia {
     height: 100vh;
@@ -16,13 +16,15 @@
   position: relative;
   height: inherit;
   background-color: transparent;
+  display: flex;
 }
 
 .bottomHeroImageWrapper {
   position: relative;
-  height: 30rem;
+  height: 500px;
   width: 100%;
-  top: 20rem;
+  align-self: flex-end;
+  margin-left: -100px;
 
   @include smallMedia {
     top: 18rem;

@@ -1,7 +1,11 @@
 @use "styles/mixins" as *;
 
 .aboutContainer {
-  height: 60vh;
+  // height: 60vh;
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  min-height: 65vh;
 
   @include smallMedia {
     height: 90vh;
@@ -24,7 +28,7 @@
   position: absolute;
   background-color: transparent;
   top: 0rem;
-  left: 9rem;
+  left: 60px;
   z-index: 1;
 
   @include mediumMedia {
@@ -36,7 +40,7 @@
   position: absolute;
   background-color: transparent;
   top: 6.5rem;
-  left: 9rem;
+  left: 60px;
   z-index: 1;
 
   @include smallMedia {
@@ -44,7 +48,7 @@
   }
 
   @include mediumMedia {
-    top: 3rem;
+    top: 4rem;
     left: 6.5%;
   }
 }

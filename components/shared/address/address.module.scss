@@ -27,8 +27,8 @@
 .addressTitle {
   position: absolute;
   background-color: transparent;
-  top: 0rem;
-  left: 9rem;
+  top: 249px;
+  left: 60px;
   z-index: 1;
   width: 15rem;
 
@@ -45,8 +45,8 @@
 .addressDescription {
   position: absolute;
   background-color: transparent;
-  top: 9rem;
-  left: 9rem;
+  top: 400px;
+  left: 60px;
   z-index: 1;
 
   @include mediumMedia {

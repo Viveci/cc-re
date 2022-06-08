@@ -17,8 +17,8 @@
 .studioTitle {
   position: absolute;
   background-color: transparent;
-  top: 0rem;
-  left: 9rem;
+  top: -30px;
+  left: 60px;
   z-index: 1;
 
   @include mediumMedia {
@@ -44,7 +44,7 @@
   width: 45%;
   position: relative;
   top: 10rem;
-  left: 9rem;
+  left: 60px;
   z-index: 1;
   text-align: center;
   font-size: 1.5rem;

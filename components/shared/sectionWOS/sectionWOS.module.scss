@@ -28,10 +28,10 @@
 .wosTitle {
   position: absolute;
   background-color: transparent;
-  top: 0rem;
-  left: 9rem;
+  top: 150px;
+  left: 60px;
   z-index: 1;
-  width: 15rem;
+  width: 50%;
 
   @include smallMedia {
     width: 20rem;
