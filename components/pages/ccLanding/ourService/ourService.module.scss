@@ -12,7 +12,7 @@
 
   @include mediumMedia {
     height: 70vh;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -30,7 +30,7 @@
   z-index: 1;
 
   @include mediumMedia {
-    left: 13rem;
+    left: 600px;
   }
 }
 
@@ -47,7 +47,7 @@
 
   @include mediumMedia {
     top: 3rem;
-    left: 15rem;
+    left: 600px;
   }
 }
 
@@ -87,6 +87,6 @@
     line-height: 1rem;
     padding: 0.2rem 0.1rem;
     font-size: 18px;
-    width: 50%;
+    width: 164px;
   }
 }
