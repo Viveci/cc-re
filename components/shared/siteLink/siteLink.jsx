@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
-const SiteLink = ({ linkTo, value, className, externalLink, ...props }) =>
-  externalLink ? (
+const SiteLink = ({ linkTo, value, className, externalLink, ...props }) => {
+  const router = useRouter();
+  return externalLink ? (
     <a href={externalLink} className={className} {...props}>
       {value}
     </a>
@@ -12,5 +14,8 @@ const SiteLink = ({ linkTo, value, className, externalLink, ...props }) =>
       </a>
     </Link>
   );
+}
+
+
 
 export default SiteLink;

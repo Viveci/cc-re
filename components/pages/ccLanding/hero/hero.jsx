@@ -50,7 +50,7 @@ const Hero = () => {
           data-aos-duration="1000"
           data-aos-delay="899"
         >
-          {HERO_TITLE}
+          {HERO_TITLE} 
         </h1>
         <p
           className={styles.heroSubtitle}

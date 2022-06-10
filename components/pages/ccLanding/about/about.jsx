@@ -6,6 +6,7 @@ import styles from "./about.module.scss";
 const About = () => {
   return (
     <section className={styles.aboutContainer}>
+      <div className={styles.arrowDown}></div>
       <article className={styles.aboutWrapper}>
         <header className={styles.aboutTitle}>
           <SectionTitle title={ABOUT_TITLE} />
