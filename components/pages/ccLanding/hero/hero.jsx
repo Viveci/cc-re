@@ -69,6 +69,9 @@ const Hero = () => {
           data-aos-delay="900"
         />
       </div>
+      <div className={styles.arrowDownWrapper}>
+      <div className={styles.arrowDown}></div>
+      </div>
     </section>
   );
 };

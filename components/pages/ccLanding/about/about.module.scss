@@ -1,19 +1,19 @@
 @use "styles/mixins" as *;
 
 .aboutContainer {
-  // height: 60vh;
   margin-top: 220px;
   display: flex;
   flex-direction: column;
-  min-height: 65vh;
+  margin-bottom: 20px;
 
   @include smallMedia {
-    height: 90vh;
-    margin-top: 10rem;
+    margin-bottom: 100px;
   }
 
   @include mediumMedia {
-    height: 40vh;
+    margin-top: 70px;
+  }
+  @include desktop {
     margin-top: 12rem;
   }
 }
@@ -25,64 +25,28 @@
 }
 
 .aboutTitle {
-  position: absolute;
   background-color: transparent;
-  top: 0rem;
-  left: 60px;
   z-index: 1;
+  margin-left: 60px;
 
   @include mediumMedia {
-    left: 2.5rem;
+    margin-left: 70px;
+   
   }
 }
 
 .aboutDescription {
-  position: absolute;
   background-color: transparent;
-  top: 6.5rem;
-  left: 60px;
   z-index: 1;
+  margin-top: 20px;
+  margin-left: 60px;
 
   @include smallMedia {
-    top: 5rem;
   }
 
   @include mediumMedia {
-    top: 4rem;
-    left: 6.5%;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    margin-top: 0;
-  }
-  50% {
+    margin-left: 70px;
     margin-top: 30px;
   }
-  100% {
-    margin-top: 0;
-  }
 }
 
-.arrowDown {
-display: none;
-
-  @include desktop {
-    display: block;
-    border-right: 4px solid white; 
-    border-bottom: 4px solid white;
-    height: 40px;
-    width: 40px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 11%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: transparent;
-      -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-  }
-}
