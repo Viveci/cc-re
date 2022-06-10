@@ -3,17 +3,20 @@
 .serviceContainer {
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
+ margin-bottom: 70px;
 
   @include smallMedia {
-    height: 90vh;
     margin-top: unset;
+    margin-bottom: 140px;
   }
 
   @include mediumMedia {
-    height: 70vh;
     margin-top: 2.5rem;
   }
+  @include desktop {
+    margin-bottom: 180px;
+  }
+
 }
 
 .serviceWrapper {
@@ -31,7 +34,7 @@
     margin-left: 250px;
   }
   @include desktop {
-    margin-left: 540px;
+    margin-left: 640px;
   }
 }
 
@@ -50,7 +53,7 @@
     margin-left: 250px;
   }
   @include desktop {
-    margin-left: 540px;
+    margin-left: 640px;
   }
 }
 

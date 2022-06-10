@@ -12,7 +12,7 @@
   }
 
   @include mediumMedia {
-    height: 25vh;
+    height: 100vh;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -27,30 +27,43 @@
 .addressTitle {
   position: absolute;
   background-color: transparent;
-  top: 249px;
+  top: 180px;
   left: 60px;
   z-index: 1;
   width: 15rem;
 
   @include smallMedia {
-    width: 20rem;
+    width: 100%;
+    top: 100px;
   }
 
   @include mediumMedia {
-    width: max-content;
     left: 2.5rem;
+  }
+  @include desktop {
+    width: 60%;
+    left: 110px;
   }
 }
 
 .addressDescription {
-  position: absolute;
+  position: relative;
   background-color: transparent;
-  top: 400px;
+  top: 320px;
   left: 60px;
   z-index: 1;
 
+  p {
+    padding-bottom: 0;
+  }
+
   @include mediumMedia {
-    top: 2.5rem;
     left: 2.58rem;
+    top: 280px;
+  }
+  @include desktop {
+    position: absolute;
+    left: 110px;
+    top: 210px;
   }
 }

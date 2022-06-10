@@ -2,9 +2,13 @@
 
 .studioContainer {
   background-color: transparent;
+  margin-top: -30px;
 
   @include mediumMedia {
-    margin-top: 400px;
+    margin-top: -60px;
+  }
+  @include desktop {
+    margin-top: 280px;
   }
 }
 
@@ -15,14 +19,17 @@
 }
 
 .studioTitle {
-  position: absolute;
+  margin-top: 0px;
+  margin-left: 60px;
   background-color: transparent;
-  top: -30px;
-  left: 60px;
   z-index: 1;
 
   @include mediumMedia {
-    left: 2.5rem;
+    
+  }
+  @include desktop {
+    margin-bottom: -90px;
+    margin-left: 110px;
   }
 }
 
@@ -65,7 +72,7 @@
   }
 
   @include mediumMedia {
-    top: 0.9rem;
+    top: -3rem;
     left: 25rem;
     padding: 0.3rem 0.5rem;
     font-size: 18px;

@@ -25,6 +25,8 @@
   @include mediumMedia {
     font-size: 16px;
     max-width: 500px;
+  }
+  @include desktop {
     padding-bottom: 40px;
   }
 }
