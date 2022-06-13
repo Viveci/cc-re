@@ -3,7 +3,9 @@
 .wrapper {
   position: relative;
   width: 100%;
+  overflow-x: clip;
 }
+
 
 .main {
   padding-top: 3.4rem;

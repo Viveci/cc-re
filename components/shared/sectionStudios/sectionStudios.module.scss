@@ -29,9 +29,9 @@
 
 .studioImageWrapper {
   position: relative;
-  height: 20rem;
-  width: 25rem;
-  left: 12rem;
+  height: 299px;
+  width: 439px;
+  left: 60px;
   top: 7rem;
 
   @include smallMedia {
@@ -56,8 +56,8 @@
 .studioName {
   position: absolute;
   background-color: transparent;
-  top: 22rem;
-  left: 15rem;
+  top: 315px;
+  left: 100px;
   z-index: 1;
   font-size: 4rem;
   font-weight: bold;

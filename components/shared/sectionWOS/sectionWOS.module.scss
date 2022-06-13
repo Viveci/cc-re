@@ -26,28 +26,33 @@
 }
 
 .wosTitle {
-  position: absolute;
   background-color: transparent;
-  top: 0rem;
-  left: 9rem;
+  padding-top: 100px;
   z-index: 1;
-  width: 15rem;
+  max-width: 60%;
+  margin-left: 60px;
 
   @include smallMedia {
-    width: 20rem;
+    padding-top: 90px;
   }
 
   @include mediumMedia {
-    width: max-content;
-    left: 2.5rem;
+  }
+  @include desktop {
+    margin-left: 108px;
+    max-width: 30%;
+  }
+  @include desktopLarge {
+    margin-left: 158px;
+    max-width: 20%;
   }
 }
 
 .wosDescription {
   position: absolute;
   background-color: transparent;
-  top: 6.5rem;
-  left: 9rem;
+  top: 210px;
+  left: 60px;
   z-index: 1;
 
   @include smallMedia {
@@ -55,7 +60,14 @@
   }
 
   @include mediumMedia {
-    top: 2.5rem;
-    left: 2.58rem;
+    top: 280px;
+  }
+  @include desktop {
+    left: 110px;
+    top: 270px;
+  }
+  @include desktopLarge {
+    left: 160px;
+    top: 270px;
   }
 }
