@@ -1,10 +1,12 @@
 import useScrollFromTop from "../../../hooks/useScrollFromTop";
+import { useRouter } from 'next/router';
 import SiteLogo from "../../shared/siteLogo";
 import SiteLink from "../../shared/siteLink";
 import styles from "./navbarDesktop.module.scss";
 
 const NavbarDesktop = () => {
   const isScroll = useScrollFromTop();
+  const router = useRouter();
 
   return (
     <div className={styles.navbarDesktopWrapper}>
@@ -32,6 +34,7 @@ const NavbarDesktop = () => {
               value="Home"
               data-aos="zoom-in"
               data-aos-duration="800"
+              style={{textDecoration: `${router.pathname === "/" ? "line-through" : ""}`}}
             />
           </li>
           <li>
@@ -40,6 +43,7 @@ const NavbarDesktop = () => {
               value="Our services"
               data-aos="zoom-in"
               data-aos-duration="800"
+              style={{textDecoration: `${router.pathname === "/services" ? "line-through" : ""}`}}
             />
           </li>
           <li>
@@ -48,6 +52,7 @@ const NavbarDesktop = () => {
               value="Our studios"
               data-aos="zoom-in"
               data-aos-duration="800"
+              style={{textDecoration: `${router.pathname === "/studios" ? "line-through" : ""}`}}
             />
           </li>
         </ul>
