@@ -6,7 +6,6 @@ import styles from "./layout.module.scss";
 
 const Layout = ({ children }) => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
-
   const handleShowMenu = () => setShowMenuMobile(!showMenuMobile);
 
   return (

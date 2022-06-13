@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
+import { useRouter } from 'next/router';
 import { useSpring, animated } from "react-spring";
 import SiteLogo from "../shared/siteLogo/siteLogo";
 import SiteLink from "../shared/siteLink";
 import styles from "./mobileMenu.module.scss";
 
 const MobileMenu = ({ showMenuMobile, handleShowMenu }) => {
+  const router = useRouter()
   useEffect(() => {
     if (showMenuMobile) {
       document.body.style.overflow = "hidden";
@@ -44,16 +46,16 @@ const MobileMenu = ({ showMenuMobile, handleShowMenu }) => {
         </div>
         <ul className={styles.mobileMenuItemsContainer}>
           <li>
-            <SiteLink linkTo="/" value="Home" />
+            <SiteLink linkTo="/" value="Home"  style={{textDecoration: `${router.pathname === "/" ? "line-through" : ""}`}}/>
           </li>
           <li>
-            <SiteLink linkTo="/services" value="Our services" />
+            <SiteLink linkTo="/services" value="Our services"  style={{textDecoration: `${router.pathname === "/services" ? "line-through" : ""}`}}/>
           </li>
           <li>
-            <SiteLink linkTo="/studios" value="Our studios" />
+            <SiteLink linkTo="/studios" value="Our studios"  style={{textDecoration: `${router.pathname === "/studios" ? "line-through" : ""}`}}/>
           </li>
           <li>
-            <SiteLink linkTo="/contact" value="Get in touch" />
+            <SiteLink linkTo="/contact" value="Get in touch"  style={{textDecoration: `${router.pathname === "/contact" ? "line-through" : ""}`}}/>
           </li>
         </ul>
         <div className={styles.mobileMenuLogoContainer}>

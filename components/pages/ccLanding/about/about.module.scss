@@ -1,16 +1,20 @@
 @use "styles/mixins" as *;
 
 .aboutContainer {
-  height: 60vh;
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 
   @include smallMedia {
-    height: 90vh;
-    margin-top: 10rem;
+    margin-bottom: 100px;
   }
 
   @include mediumMedia {
-    height: 40vh;
-    margin-top: 8rem;
+    margin-top: 70px;
+  }
+  @include desktop {
+    margin-top: 12rem;
   }
 }
 
@@ -21,30 +25,33 @@
 }
 
 .aboutTitle {
-  position: absolute;
   background-color: transparent;
-  top: 0rem;
-  left: 9rem;
   z-index: 1;
+  margin-left: 60px;
 
   @include mediumMedia {
-    left: 2.5rem;
+    margin-left: 70px;
+  }
+  @include desktop {
+    margin-left: 110px;
   }
 }
 
 .aboutDescription {
-  position: absolute;
   background-color: transparent;
-  top: 6.5rem;
-  left: 9rem;
   z-index: 1;
+  margin-top: 20px;
+  margin-left: 60px;
 
   @include smallMedia {
-    top: 5rem;
   }
 
   @include mediumMedia {
-    top: 3rem;
-    left: 4.5rem;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  @include desktop {
+    margin-left: 110px;
   }
 }
+
