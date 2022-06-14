@@ -100,18 +100,19 @@
   position: relative;
   height: inherit;
   background-color: transparent;
+
 }
 
 .contactHeroImageWrapper {
   position: relative;
   background-color: transparent;
-  height: 30rem;
+  height: 530px;
   width: 100%;
-  top: 2rem;
+  // top: 20px;
 
   @include mediumMedia {
     top: -3rem;
-    height: 25rem;
+    height: 1500px;
   }
 }
 
