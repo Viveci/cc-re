@@ -1,0 +1,49 @@
+@use "styles/mixins" as *;
+
+.contactHeaderContainer {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // width: 100%;
+    // height: 50vh;
+  
+    // @include smallMedia {
+    //   height: 100vh;
+    // }
+  
+    // @include mediumMedia {
+    //   height: 70vh;
+    // }
+  }
+  
+  .contactHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    @include mediumMedia {
+      flex-direction: row;
+      padding: 0 1rem 1rem 2rem;
+    }
+  }
+  
+  .contactHeaderTitle {
+    position: absolute;
+    background-color: transparent;
+    top: 200px;
+    z-index: 2;
+    color: var(--white);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 73px;
+    max-width: 276px;
+    margin: 90px auto 0;
+    left: 3%;
+    right: 0;
+  
+    @include mediumMedia {
+    }
+  
+    @include desktop {
+
+    }
+  }
