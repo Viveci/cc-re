@@ -29,7 +29,7 @@
   .contactHeaderTitle {
     position: absolute;
     background-color: transparent;
-    top: 200px;
+    top: 50px;
     z-index: 2;
     color: var(--white);
     font-size: 72px;
@@ -37,10 +37,16 @@
     line-height: 73px;
     max-width: 276px;
     margin: 90px auto 0;
-    left: 3%;
+    left: 10%;
     right: 0;
+
+    h2 {
+      font-size: 72px;
+    }
   
     @include mediumMedia {
+      left: 3%;
+      top: 200px;
     }
   
     @include desktop {
