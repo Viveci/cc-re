@@ -130,6 +130,9 @@
     height: 1200px;
     top: -4rem;
   }
+  @include desktopLarge {
+    height: 1575px;
+  }
 }
 
 .contactHeroImage {

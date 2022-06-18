@@ -46,7 +46,7 @@
   gap: 1rem;
   background-color: var(--white);
   color: var(--black);
-  border-radius: 1rem;
+  border-radius: 35px;
   padding: 4rem 2rem 1.5rem;
   width: 30rem;
   margin: 0 auto;
@@ -121,7 +121,7 @@
   background-color: var(--black);
   color: var(--white);
   border-radius: 3rem;
-  padding: 1rem 0.5rem;
+  padding: 1.2rem 0.5rem;
   font-size: 12px;
   width: 45%;
   text-align: center;
@@ -141,7 +141,10 @@
   }
 
   @include mediumMedia {
-    padding: 0.2rem 0.1rem;
+    padding: 0.5rem 0.1rem;
     font-size: 16px;
+  }
+  @include desktop {
+    padding: 0;
   }
 }
