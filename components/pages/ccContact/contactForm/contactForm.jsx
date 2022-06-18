@@ -58,6 +58,7 @@ const ContactForm = ({ setShowThankYouScreen }) => {
             placeholder="Start date"
             onFocus={(e) => (e.currentTarget.type = "date")}
             onBlur={(e) => (e.currentTarget.type = "text")}
+            min={new Date().toISOString().split('T')[0]}
             {...register("startDate")}
           />
           <input
