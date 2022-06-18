@@ -7,6 +7,7 @@ import {
   STROKE_RED,
   WARNING,
   CRUISE_RED_LOGO,
+  CONTACT_PAGE_BG,
 } from "../../../../lib/constants";
 import ContactForm from "../contactForm";
 import styles from "./contactHero.module.scss";
@@ -69,7 +70,7 @@ const ContactHero = () => {
             data-aos-duration="800"
           >
             <Image
-              src={HERO_IMAGE}
+              src={CONTACT_PAGE_BG}
               alt={HERO_BG_ALT}
               layout="fill"
               objectFit="contain"
