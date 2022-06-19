@@ -3,7 +3,10 @@
 .studioImageContainer {
   position: relative;
   background-color: transparent;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
+  :last-child {
+    margin-bottom: 0;
+  }
 
   @include smallMedia {
     margin-bottom: 5rem;
@@ -16,7 +19,6 @@
 }
 
 .studioImageContainerMb {
-  margin-bottom: 26rem;
 
   @include smallMedia {
     margin-bottom: 17rem;
@@ -29,8 +31,8 @@
 
 .studioImageWrapper {
   position: relative;
-  height: 299px;
-  width: 439px;
+  height: 230px;
+  width: 290px;
   left: 60px;
   top: 7rem;
 
@@ -54,9 +56,9 @@
 }
 
 .studioName {
-  position: absolute;
+  position: relative;
   background-color: transparent;
-  top: 315px;
+  top: 10px;
   left: 100px;
   z-index: 1;
   font-size: 4rem;
@@ -65,6 +67,7 @@
   width: 10rem;
 
   @include smallMedia {
+    position: absolute;
     top: 17rem;
     font-size: 2.5rem;
     width: 7rem;
@@ -78,17 +81,18 @@
 }
 
 .studioDescription {
-  position: absolute;
+  position: relative;
   background-color: transparent;
   color: var(--white);
-  top: 36rem;
-  left: 6.5rem;
+  margin-top: 126px;
+  margin-left: 50px;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 25rem;
+  width: 29rem;
 
   @include smallMedia {
+    position: absolute;
     font-size: 1rem;
     top: 25.5rem;
     left: 8rem;
@@ -105,7 +109,8 @@
   span,
   strong {
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 12px;
+    line-height:20px;
 
     @include smallMedia {
       font-size: 0.7rem;
@@ -160,7 +165,9 @@
 }
 
 .studioPlacementCenter {
-  left: 6.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 
   @include smallMedia {
     left: 8rem;
@@ -172,8 +179,7 @@
 }
 
 .studioTextPlacementCenter {
-  top: 27rem;
-  left: 6.5rem;
+  left: 50px;
 
   @include smallMedia {
     top: 20rem;

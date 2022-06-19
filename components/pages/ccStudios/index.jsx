@@ -9,7 +9,9 @@ const CCStudios = () => {
       <StudiosHeader />
       <StudioImages />
       <SectionWOS />
+      <div style={{height: "70vh"}}>
       <Address />
+      </div>
     </>
   );
 };

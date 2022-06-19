@@ -13,8 +13,11 @@
   }
 
   @include mediumMedia {
-    height: 70vh;
+    height: 35vh;
   }
+  @include desktop {
+    height: 50vh;
+}
 }
 
 .studiosHeaderWrapper {
@@ -22,8 +25,19 @@
   flex-direction: column;
 
   @include mediumMedia {
+    width: 90%;
+  }
+  @include desktop {
+    margin-bottom: 30px;
     flex-direction: row;
-    padding: 0 1rem 1rem 2rem;
+    justify-content: space-between;
+  }
+}
+
+.studiosHeaderTitle {
+  max-width: 20%;
+  h2 {
+    font-size: 62px;
   }
 }
 
@@ -31,8 +45,12 @@
 .studiosHeaderText {
   align-self: flex-start;
   margin-bottom: 2.5rem;
-
+  margin-left: 60px;
   @include mediumMedia {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  @include desktop {
     align-self: center;
     margin: 0;
   }

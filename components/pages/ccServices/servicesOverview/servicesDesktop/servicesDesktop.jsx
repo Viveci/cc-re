@@ -12,7 +12,7 @@ const ServicesDesktop = () => {
         <Accordion allowMultipleExpanded allowZeroExpanded>
           <AccordionItem>
             <SectionServices
-              animationDelay={"300"}
+              animationDelay={"0"}
               isRedIcon
               isAccordionItem
               icon={<AiOutlinePlayCircle size={50} />}
@@ -22,7 +22,7 @@ const ServicesDesktop = () => {
           </AccordionItem>
           <AccordionItem>
             <SectionServices
-              animationDelay={"600"}
+              animationDelay={"0"}
               isPurpleIcon
               isAccordionItem
               icon={<MdOutlineHeadphones size={50} />}
@@ -32,7 +32,7 @@ const ServicesDesktop = () => {
           </AccordionItem>
           <AccordionItem>
             <SectionServices
-              animationDelay={"800"}
+              animationDelay={"0"}
               isYellowIcon
               isAccordionItem
               icon={<CgNotes size={50} />}
