@@ -37,14 +37,14 @@
   top: 7rem;
 
   @include smallMedia {
-    height: 15rem;
-    width: 20rem;
+    height: 300px;
+    width: 300px;
     top: 5rem;
   }
 
   @include mediumMedia {
-    height: 10rem;
-    width: 13rem;
+    // height: 10rem;
+    // width: 13rem;
     left: 5rem;
     top: 0;
   }
@@ -76,7 +76,7 @@
   @include mediumMedia {
     top: 4rem;
     left: 2.5rem;
-    font-size: 2rem;
+    font-size: 52px;
   }
 }
 
@@ -94,14 +94,12 @@
   @include smallMedia {
     position: absolute;
     font-size: 1rem;
-    top: 25.5rem;
-    left: 8rem;
+    top: -120px;
+    left: 400px;
     width: 20rem;
   }
 
   @include mediumMedia {
-    left: 22rem;
-    top: 4rem;
     width: 14rem;
   }
 
@@ -113,11 +111,9 @@
     line-height:20px;
 
     @include smallMedia {
-      font-size: 0.7rem;
     }
 
     @include mediumMedia {
-      font-size: 0.4rem;
     }
   }
 
@@ -170,10 +166,13 @@
   margin: 0 auto;
 
   @include smallMedia {
-    left: 8rem;
+    left: 120px;
+    margin: unset;
   }
 
   @include mediumMedia {
+  }
+  @include desktop {
     left: 8rem;
   }
 }
