@@ -20,6 +20,7 @@
 
   @include smallMedia {
     font-size: 1rem;
+    padding-bottom: 0;
   }
 
   @include mediumMedia {
@@ -28,5 +29,6 @@
   }
   @include desktop {
     padding-bottom: 40px;
+    width: 100%;
   }
 }

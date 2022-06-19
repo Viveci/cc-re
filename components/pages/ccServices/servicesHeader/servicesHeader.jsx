@@ -13,7 +13,7 @@ const ServicesHeader = () => {
           <SectionTitle title={SERVICES_TITLE} />
         </div>
         <div className={styles.serviceHeaderText}>
-          <SectionText value={SERVICE_PAGE_DESCRIPTION} />
+          <SectionText value={SERVICE_PAGE_DESCRIPTION}/>
         </div>
       </div>
       <Divider />

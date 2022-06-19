@@ -8,8 +8,13 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  @include smallMedia {
+    margin: 12% auto auto 7%;
+  }
+  @include desktop {
+    margin-left: 8%;
+  }
 }
 
 .serviceDesktopDescriptionContainer {

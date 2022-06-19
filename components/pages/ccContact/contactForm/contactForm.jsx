@@ -51,7 +51,7 @@ const ContactForm = ({ setShowThankYouScreen }) => {
         onSubmit={handleSubmit(onSubmit)}
         className={styles.contactFormWrapper}
       >
-        <input placeholder="Studio box" {...register("studioBox")} />
+        <input placeholder="Studio box" {...register("studioBox")} required/>
 
         <div className={styles.contactFormDateWrapper}>
           <input
@@ -59,12 +59,14 @@ const ContactForm = ({ setShowThankYouScreen }) => {
             onFocus={(e) => (e.currentTarget.type = "date")}
             onBlur={(e) => (e.currentTarget.type = "text")}
             min={new Date().toISOString().split('T')[0]}
+            required
             {...register("startDate")}
           />
           <input
             placeholder="End date"
             onFocus={(e) => (e.currentTarget.type = "date")}
             onBlur={(e) => (e.currentTarget.type = "text")}
+            required
             {...register("endDate")}
           />
         </div>
@@ -74,25 +76,28 @@ const ContactForm = ({ setShowThankYouScreen }) => {
             placeholder="Start"
             onFocus={(e) => (e.currentTarget.type = "time")}
             onBlur={(e) => (e.currentTarget.type = "text")}
+            required
             {...register("startTime")}
           />
           <input
             placeholder="End"
             onFocus={(e) => (e.currentTarget.type = "time")}
             onBlur={(e) => (e.currentTarget.type = "text")}
+            required
             {...register("endTime")}
           />
           <input
             placeholder="Ppl"
             type="number"
+            required
             {...register("amountOfPeople")}
           />
         </div>
 
-        <input placeholder="Name" {...register("name")} />
-        <input placeholder="Email" {...register("email")} />
+        <input placeholder="Name" {...register("name")} required/>
+        <input placeholder="Email" {...register("email")} required/>
 
-        <textarea placeholder="Comment/Message" {...register("comment")} />
+        <textarea placeholder="Comment/Message" {...register("comment")} required/>
 
         <button
           className={styles.contactFormButton}

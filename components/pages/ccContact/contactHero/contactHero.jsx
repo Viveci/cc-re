@@ -1,9 +1,8 @@
-import { useState } from "react";
-import Image from "next/image";
+
 import { IoClose } from "react-icons/io5";
+import Image from "next/image"
 import {
   HERO_BG_ALT,
-  HERO_IMAGE,
   STROKE_RED,
   WARNING,
   CRUISE_RED_LOGO,
@@ -12,8 +11,7 @@ import {
 import ContactForm from "../contactForm";
 import styles from "./contactHero.module.scss";
 
-const ContactHero = () => {
-  const [showThankYouScreen, setShowThankYouScreen] = useState(false);
+const ContactHero = ({showThankYouScreen, setShowThankYouScreen}) => {
 
   return (
     <section className={styles.contactHeroContainer}>
@@ -33,31 +31,24 @@ const ContactHero = () => {
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            <Image
+            <img
               src={WARNING}
               alt={HERO_BG_ALT}
-              layout="fill"
-              objectFit="contain"
-              objectPosition="center"
-              quality={100}
               className={styles.thankYouWarningImage}
             />
           </div>
 
-          <p className={styles.thankYouText}>Thank you </p>
+          <p className={styles.thankYouText}   data-aos="fade-up"
+            data-aos-duration="800">Thank you </p>
 
           <div
             className={styles.thankYouLogoImageWrapper}
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            <Image
+            <img
               src={CRUISE_RED_LOGO}
               alt={HERO_BG_ALT}
-              layout="fill"
-              objectFit="contain"
-              objectPosition="center"
-              quality={100}
               className={styles.thankYouLogoImage}
             />
           </div>

@@ -27,7 +27,7 @@
 
 .thankYouWrapper {
   background-color: transparent;
-  height: 90vh;
+  height: 70vh;
   position: relative;
   color: white;
   display: flex;
@@ -38,7 +38,7 @@
 
 .thankYouCloseIconContainer {
   position: relative;
-  top: -15rem;
+  top: -80px;
   left: 2rem;
   width: 100%;
   color: var(--white);
@@ -46,29 +46,34 @@
   margin-bottom: 1.5rem;
 
   @include smallMedia {
-    top: 1rem;
+    top: -30px;
   }
 
   @include mediumMedia {
-    top: -2rem;
     left: 2rem;
   }
+  @include desktop {
+    top: 45px;
+}
 }
 
 .thankYouWarningImageWrapper {
   background-color: transparent;
-  height: 2rem;
-  width: 100%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 
   @include smallMedia {
-    height: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 120px;
   }
 
-  @include mediumMedia {
-    height: 2rem;
-    margin-bottom: 1rem;
+  @include desktop {
+    margin-bottom: 80px;
+  }
+
+  img {
+    height: 52px;
+    @include smallMedia {
+      height: 68px;
+    }
   }
 }
 
@@ -78,15 +83,13 @@
 
 .thankYouLogoImageWrapper {
   background-color: transparent;
-  height: 15rem;
-  width: 100%;
 
-  @include smallMedia {
-    height: 4rem;
-  }
 
-  @include mediumMedia {
-    height: 5rem;
+  img {
+    height: 100px;
+    @include smallMedia {
+      height: auto;
+    }
   }
 }
 
@@ -98,14 +101,19 @@
   color: var(--red);
   background-color: transparent;
   text-transform: capitalize;
-  font-size: 4rem;
+ font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: 700;
 
   @include smallMedia {
-    font-size: 1rem;
+    font-size: 58px;
   }
 
   @include mediumMedia {
-    font-size: 18px;
+    text-align: center;
+  }
+  @include desktop {
+    max-width: 15%;
   }
 }
 
