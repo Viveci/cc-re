@@ -18,6 +18,15 @@ const NavbarDesktop = () => {
         <SiteLogo />
       </div>
 
+      {router.pathname === "/contact" && 
+       <SiteLink
+       linkTo="/contact"
+       value="Get in touch"
+       className={styles.navbarDesktopButton}
+       style={{textDecoration: `${router.pathname === "/contact" ? "line-through" : ""}`}}
+     />
+      }
+
       {isScroll && (
         <SiteLink
           linkTo="/contact"
