@@ -27,6 +27,9 @@
   @include mediumMedia {
     margin-bottom: 2rem;
   }
+  @include desktop {
+    margin-bottom: 150px;
+  }
 }
 
 .studioImageWrapper {
@@ -43,10 +46,13 @@
   }
 
   @include mediumMedia {
-    // height: 10rem;
-    // width: 13rem;
     left: 5rem;
     top: 0;
+  }
+
+  @include desktop {
+    height: 300px;
+    width: 400px;
   }
 }
 
@@ -103,6 +109,11 @@
     width: 14rem;
   }
 
+  @include desktop {
+  left: 700px;
+  padding-right: 100px;
+  }
+
   p,
   span,
   strong {
@@ -110,10 +121,8 @@
     font-size: 12px;
     line-height:20px;
 
-    @include smallMedia {
-    }
-
-    @include mediumMedia {
+    @include desktop {
+      font-size: 14px;
     }
   }
 
@@ -173,7 +182,9 @@
   @include mediumMedia {
   }
   @include desktop {
-    left: 8rem;
+    position: relative;
+    left: 230px;
+    width: 440px;
   }
 }
 

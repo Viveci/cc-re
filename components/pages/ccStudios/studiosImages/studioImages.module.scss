@@ -9,8 +9,13 @@
   height: inherit;
   background-color: transparent;
 
+
   h1 {
     top: 100px;
     left: 50px;
+    max-width: 8%;
+    @include desktop {
+      left: 160px;
+    }
   }
 }
