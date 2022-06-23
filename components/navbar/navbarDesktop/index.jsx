@@ -27,7 +27,7 @@ const NavbarDesktop = () => {
      />
       }
 
-      {isScroll && (
+      {isScroll && router.pathname !== "/contact" && (
         <SiteLink
           linkTo="/contact"
           value="Get in touch"

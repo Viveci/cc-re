@@ -54,6 +54,7 @@ const ServicesDesktop = () => {
           <AccordionItem >
             <SectionServices
               isAccordionItem
+              isWhiteIcon
               title="Podcasts and Voice Over."
               text="We take every podcast and voice over with most pride, attention and detail. Our goal is to provide the best quality recording to our clients. We know its all about workflow, so our sound engineers are committed to upholding the recording process most efficiently while keeping podcasts and voiceover recordings focused on the project goals. "
             />

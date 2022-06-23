@@ -173,6 +173,8 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+  cursor: pointer;
+
 
   @include smallMedia {
     left: 120px;
@@ -206,4 +208,9 @@
   @include mediumMedia {
     left: 19rem;
   }
+}
+
+.studioExpandedImages {
+  height: fit-content;
+  width: fit-content;
 }
