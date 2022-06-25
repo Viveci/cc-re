@@ -12,16 +12,12 @@ const ServicesDesktop = () => {
         <Accordion allowMultipleExpanded allowZeroExpanded>
           <AccordionItem>
             <SectionServices
-              animationDelay={"1000"}
+              animationDelay={"0"}
               isRedIcon
               isAccordionItem
-              icon={<AiOutlinePlayCircle size={80} />}
+              icon={<AiOutlinePlayCircle size={50} />}
               title="Plug and Play Recording."
-              text="Rent one of our 5 recording studios. In addition to your room
-          rental, a highly experienced professional audio engineer or
-          assistant engineer can be included for the duration of your
-          rental. Studio rentals can also include the use of rooms for
-          mixing and mastering."
+              text="Our most popular service by far offers the rental of one of our 5 recording studios. In addition to your room rental, a highly experienced professional audio engineer or assistant engineer can be included for the duration of your rental. Studio rentals can also include the use of rooms for mixing and mastering."
             />
           </AccordionItem>
           <AccordionItem>
@@ -29,9 +25,9 @@ const ServicesDesktop = () => {
               animationDelay={"0"}
               isPurpleIcon
               isAccordionItem
-              icon={<MdOutlineHeadphones size={80} />}
+              icon={<MdOutlineHeadphones size={50} />}
               title="Music Production."
-              text="Full music production services by cultivating or curating what an artist represents. Our in-house music producers are experienced, professional, and can handle working in teams or with artists individually."
+              text="We offer full music production services by cultivating or curating what an artist represents. Our in-house music producers are experienced, professional, and can handle working in teams or with artists individually."
             />
           </AccordionItem>
           <AccordionItem>
@@ -39,9 +35,9 @@ const ServicesDesktop = () => {
               animationDelay={"0"}
               isYellowIcon
               isAccordionItem
-              icon={<CgNotes size={80} />}
+              icon={<CgNotes size={50} />}
               title="Writing Camps."
-              text="5 unique studios which are perfect to host songwriting camps. Our facility can hold up to 30+ producers/songwriters at once."
+              text="Cruise Control Studios houses 5 unique studios which are perfect to host songwriting camps. Our facility can hold up to 30+ producers/songwriters at once."
             />
           </AccordionItem>
           <AccordionItem>
@@ -49,20 +45,21 @@ const ServicesDesktop = () => {
               animationDelay={"0"}
               isWhiteIcon
               isAccordionItem
-              icon={<MdOutlinePodcasts size={80} />}
+              icon={<MdOutlinePodcasts size={50} />}
               title="Podcasts and Voice Over."
-              text="Our goal is to provide the best quality recording to our clients. We know its all about workflow, so our sound engineers are committed to upholding the recording process most efficiently while keeping podcasts and voiceover recordings focused on the project goals."
+              text="We take every podcast and voice over with most pride, attention and detail. Our goal is to provide the best quality recording to our clients. We know its all about workflow, so our sound engineers are committed to upholding the recording process most efficiently while keeping podcasts and voiceover recordings focused on the project goals. "
             />
           </AccordionItem>
-          {/*  <AccordionItem>
+          <div style={{marginLeft: "-9999px"}}>
+          <AccordionItem >
             <SectionServices
-              isWhiteIcon
               isAccordionItem
-              icon={<MdOutlinePodcasts size={80} />}
+              isWhiteIcon
               title="Podcasts and Voice Over."
-              text="Our goal is to provide the best quality recording to our clients. We know its all about workflow, so our sound engineers are committed to upholding the recording process most efficiently while keeping podcasts and voiceover recordings focused on the project goals."
+              text="We take every podcast and voice over with most pride, attention and detail. Our goal is to provide the best quality recording to our clients. We know its all about workflow, so our sound engineers are committed to upholding the recording process most efficiently while keeping podcasts and voiceover recordings focused on the project goals. "
             />
-          </AccordionItem> */}
+          </AccordionItem>
+          </div>
         </Accordion>
       </div>
     </section>

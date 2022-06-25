@@ -1,12 +1,19 @@
+import { useRouter } from "next/router";
 import { FiMenu } from "react-icons/fi";
-import SiteLogo from "../../shared/siteLogo";
+import { SiteLink } from "../../shared";
 import styles from "./navbarMobile.module.scss";
 
 const NavbarMobile = ({ handleShowMenu }) => {
+  const router = useRouter()
   return (
     <div className={styles.navbarMobileWrapper}>
       <div className={styles.navbarMobileLogoContainer}>
-        <SiteLogo />
+      <SiteLink
+          linkTo="/contact"
+          value="Get in touch"
+          className={styles.navbarContactButton}
+          style={{display: `${router.pathname === "/contact" ? "none" : ""}`}}
+        />
       </div>
       <div
         role="button"

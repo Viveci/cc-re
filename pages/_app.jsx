@@ -9,7 +9,6 @@ function MyApp({ Component, pageProps }) {
     AOS.init({
       offset: 100,
       easing: "ease-in-sine",
-      disable: "mobile",
     });
   }, []);
 

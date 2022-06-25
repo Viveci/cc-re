@@ -2,11 +2,10 @@
 
 .heroContainer {
   height: 60vh;
-  margin-top: 40px;
+  margin-top: 100px;
 
   @include smallMedia {
     height: 100vh;
-    margin-top: unset;
   }
 
   @include mediumMedia {

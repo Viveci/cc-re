@@ -51,6 +51,9 @@
 
   @include mediumMedia {
     margin-left: 250px;
+    div {
+      margin-bottom: 50px;
+    }
   }
   @include desktop {
     margin-left: 640px;

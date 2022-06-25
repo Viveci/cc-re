@@ -1,6 +1,8 @@
+import react, { useState } from "react";
 import Image from "next/image";
 import cn from "classnames";
 import styles from "./sectionStudios.module.scss";
+import { EXPANDED_RED_1, EXPANDED_RED_2, EXPANDED_RED_3 } from "../../../lib/constants";
 
 const SectionStudios = ({
   isRed,
@@ -17,6 +19,28 @@ const SectionStudios = ({
   isCenteredPlacement,
   isRightSidePlacement,
 }) => {
+  const [ imageClick, setImageClick ] = useState(false)
+
+  // const getExpandedImages = () => {
+  //   const images = [EXPANDED_RED_1, EXPANDED_RED_2, EXPANDED_RED_3]
+
+  //   if (isRed) {
+  //     return images.map((image, index) => {
+  //       return <Image
+  //       key={index}
+  //       onClick={() =>  setImageClick(false)}
+  //       src={image}
+  //       alt={studioImageAlt}
+  //       layout="fill"
+  //       objectFit="cover"
+  //       objectPosition="center center"
+  //       quality={100}
+  //       // className={styles.studioImage}
+  //     />
+  //     })
+  //   }
+  // }
+
   return (
     <div
       className={cn(styles.studioImageContainer, {
@@ -31,7 +55,9 @@ const SectionStudios = ({
         data-aos={animation}
         data-aos-duration="1000"
       >
+        {imageClick ? <div className={styles.studioExpandedImages}>{getExpandedImages()}</div> :
         <Image
+          // onClick={() => hasDescription && setImageClick(true)}
           src={studioImagePath}
           alt={studioImageAlt}
           layout="fill"
@@ -39,7 +65,7 @@ const SectionStudios = ({
           objectPosition="center center"
           quality={100}
           className={styles.studioImage}
-        />
+        />}
       </div>
       <h1
         className={cn(styles.studioName, {
@@ -56,7 +82,7 @@ const SectionStudios = ({
       >
         {studioTitle}
       </h1>
-      {hasDescription && (
+      {hasDescription && !imageClick && (
         <div
           className={styles.studioDescription}
           data-aos={animation}

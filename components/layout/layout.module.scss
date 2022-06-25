@@ -3,10 +3,16 @@
 .wrapper {
   position: relative;
   width: 100%;
-  overflow-x: clip;
+  overflow-x: hidden;
+}
+
+.contactWrapper {
+  position: relative;
+  width: 100%;
 }
 
 
 .main {
   padding-top: 3.4rem;
 }
+

@@ -6,7 +6,7 @@ const Divider = () => {
       className={styles.divider}
       data-aos="fade-up"
       data-aos-duration="1000"
-      data-aos-delay="500"
+      data-aos-delay="200"
     />
   );
 };

@@ -4,9 +4,10 @@
   width: 100%;
   background-color: transparent;
   color: var(--white);
-  font-size: 38px;
+ font-size: 38px;
 
   @include mediumMedia {
     font-size: 72px;
   }
 }
+
