@@ -1,7 +1,5 @@
 import { useForm } from "react-hook-form";
 import useIsMobileDevice from "../../../../hooks/useIsMobileDevice";
-import Image from "next/image";
-import { PLANE_ICON, HERO_BG_ALT } from "../../../../lib/constants";
 import styles from "./contactForm.module.scss";
 
 const ContactForm = ({ setShowThankYouScreen }) => {
@@ -38,15 +36,6 @@ const ContactForm = ({ setShowThankYouScreen }) => {
       data-aos-duration="1300"
       data-aos-delay="900"
     >
-      <div className={styles.contactFormIcon}>
-        <Image
-          src={PLANE_ICON}
-          alt={HERO_BG_ALT}
-          width={isMobile ? 40 : 80}
-          height={isMobile ? 40 : 80}
-          quality={100}
-        />
-      </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={styles.contactFormWrapper}

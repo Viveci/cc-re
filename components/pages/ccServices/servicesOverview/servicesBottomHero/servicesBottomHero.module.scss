@@ -1,14 +1,17 @@
 @use "styles/mixins" as *;
 
 .bottomHeroContainer {
-  height: 20vh;
+  height: 48vh;
 
   @include smallMedia {
     height: 100vh;
   }
 
   @include mediumMedia {
-    height: 50vh;
+    height: 48vh;
+  }
+  @include desktop {
+    height: 120vh;
   }
 }
 

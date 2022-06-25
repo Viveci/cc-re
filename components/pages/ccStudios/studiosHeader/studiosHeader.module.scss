@@ -18,12 +18,14 @@
   @include desktop {
     width: 90%;
     margin: 0 auto;
+    margin-top: 40px;
 }
 }
 
 .studiosHeaderWrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 
   @include mediumMedia {
     width: 90%;
